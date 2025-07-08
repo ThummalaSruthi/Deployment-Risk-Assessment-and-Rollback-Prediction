@@ -1,19 +1,4 @@
-# from src import change_analysis, risk_assessment, deployment_monitor, rollback_decision
 
-# change_log = {'files_changed': 6, 'lines_added': 300, 'lines_removed': 150, 'services': ['auth', 'payment']}
-# metrics = {'error_rate': 0.5}
-
-# features = change_analysis.extract_change_features(change_log)
-# X_sample = [[features['files_changed'], features['lines_added'], features['lines_removed'], features['services_affected']]]
-
-# predictor = risk_assessment.RiskPredictor()
-# predictor.train(X_sample, [1])
-# risk_score = predictor.predict(X_sample)[0]
-
-# anomaly = deployment_monitor.detect_anomalies(metrics)
-# rollback = rollback_decision.should_rollback(risk_score, anomaly)
-
-# print(f"Risk Score: {risk_score:.2f} | Anomaly: {anomaly} | Rollback Triggered: {rollback}")
 
 import pandas as pd
 from src import change_analysis, risk_assessment, deployment_monitor, rollback_decision
